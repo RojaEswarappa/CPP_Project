@@ -1,0 +1,36 @@
+// ConsoleApplication6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+
+
+void result(char *p, char arr[])
+{
+	while (*p)                            // need this will print garbage value bcz it doesnot understand where to stop it might crash sometime also 
+	{
+
+		cout << *p << endl;
+		p++;
+	}
+	
+}
+int main() {
+	char greetings[] = "Heello World!"; // char arr where automaticaly '/0' append by cstring 
+	int arr[26] = { 0 };
+	greetings[0] = 'J';
+	//  printf("%s", greetings);
+	char *p = greetings;
+	int l = 0;
+	int n = sizeof(greetings) / sizeof(greetings[0]);
+	char data[5] = { 'q', 'w', 'e', 'r', 'e' };       // there is no '/0' when we are passing array to fun it declays to pointer and lost its size data so
+
+	p = data;
+	result(p, data);                                   //best practice pass size to fun result(p,5) 
+	
+	// printf("%d",n);
+	getchar();
+	return 0;
+}
