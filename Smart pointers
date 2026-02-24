@@ -1,0 +1,21 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+class base {
+int x;
+public:
+base (){}
+base (int b){x=b;}
+void get(){
+    cout<<x*x;}
+    };
+int main()
+{
+  unique_ptr<base>b1(new base(4));
+ b1->get();
+ unique_ptr<base>b2=std::move(b1);
+ b2->get();
+ b1->get();
+  return 0;
+}
