@@ -1,0 +1,18 @@
+#include"stdafx.h"
+#include<iostream>
+#include<future>
+using namespace std;
+int fun(int a)
+{
+	int res = 0;
+	while (a>0){  res+=a; a--; }
+	return res;
+}
+int main()
+{
+	future<int>res = std::async(fun, 10); 
+	int val = res.get();
+	cout << val;
+	getchar();
+	return 0;
+}
