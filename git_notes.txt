@@ -6,5 +6,5 @@ git checkout -b branch name
 ..to check status git status
 git add --all
 git commit -m "message"
-git pull -u origin branch name ->-u for upstream
+git push -u origin branch name ->-u for upstream
 then go to github now
