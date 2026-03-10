@@ -1,0 +1,10 @@
+git clone  git url
+git init
+git remote add origin git url
+git checkout -b branch name
+.. do some modification
+..to check status git status
+git add --all
+git commit -m "message"
+git pull -u origin branch name ->-u for upstream
+then go to github now
