@@ -23,3 +23,7 @@ git status
 git add file name or git add --all
 git commit -m "message"
 git push origin branchname
+
+
+to delte branch in github
+git push -d origin branchname
