@@ -1,0 +1,7 @@
+Hash collision:
+In unordered_map ->within the bucket if key values matches hash collision will happen.
+Bucket ->slot or a position in the hash table where elements of umorder_map which are same bucket_index are mapped.
+ Bucket_index=map[key]% bucket size;
+
+More bucket_count less collision
+
